@@ -1,0 +1,15 @@
+//_ (und{erscore) at the start of the name denote that this file will will be loaded via code,so no need to load it in advance
+.top-bar , .top-bar ul{
+  background-color: $nav-background;
+}
+// equivalent to .top-bar .menu-text {}
+.top-bar{
+  .menu-text{
+    color: $nav-text-color;
+  }
+
+  .menu > .menu-text > a {
+    display : inline;
+    padding : .2rem;
+  }
+}
