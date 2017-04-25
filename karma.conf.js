@@ -4,11 +4,10 @@ module.exports = function(config){
   config.set({
     browsers : ['Chrome'],
     singleRun : true,
-    frameworks : ['mocha'],
+    frameworks: ['mocha', 'jquery-2.2.1'],
     files : ['app/tests/**/*.test.jsx'],
     preprocessors :{
-      'app/tests/app.test.jsx' : ['webpack','sourcemap'],
-      "app/tests/**/*.test.js": ["webpack", "sourcemap"]
+      "app/tests/**/*.test.jsx": ["webpack", "sourcemap"]
     },
     reporters : ['mocha'],
     client : {
